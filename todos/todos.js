@@ -36,7 +36,7 @@ async function displayTodos() {
     for (let todo of todos) {
         const todoEl = renderTodo(todo);
 
-        todoEl.addEventListener('click', async() => {
+        todosEl.addEventListener('click', async() => {
             await completeTodo(todo.id);
 
             displayTodos();
